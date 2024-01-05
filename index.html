@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelão</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            height: 150px;
+            border-collapse: collapse;
+            position: relative;
+            
+        }
+        
+        tbody>tr:nth-child(odd){
+            background-color: #A697CF;
+
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: #A6A5A5;
+        }
+
+        tbody > tr:nth-child(3n){
+            background-color: #FAF9FC;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(61, 59, 59);
+        }
+
+
+        td,th{
+            border: 1px solid black;
+            padding: 8px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        thead, tfoot{
+            background-color: rgb(61, 59, 59);
+            color: white;
+            
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>
+            <h1>Tabelão</h1>
+        </caption>
+       <thead>
+            <th scope="col">Estado</th>
+            <th scope="col">Povo</th>
+        </thead>
+        <tfoot>
+            <th scope="row">Nação</th>
+            <th>>210,1 mi</th>
+        </tfoot>
+        <tbody>
+            <!-- tr*27>td*2 -->
+            <tr>
+                <td>SP</td>
+                <td class="numero">45,9 mi</td>
+            </tr>
+            <tr>
+                <td>MG</td>
+                <td class="numero">21,1 mi</td>
+            </tr>
+            <tr>
+                <td>RJ</td>
+                <td class="numero">17,2 mi</td>
+            </tr>
+            <tr>
+                <td>BA</td>
+                <td class="numero">14,8 mi</td>
+            </tr>
+            <tr>
+                <td>PR</td>
+                <td class="numero">11,4 mi</td>
+            </tr>
+            <tr>
+                <td>RS</td>
+                <td class="numero">11,3 mi</td>
+            </tr>
+            <tr>
+                <td>PE</td>
+                <td class="numero">9,5 mi</td>
+            </tr>
+            <tr>
+                <td>CE</td>
+                <td class="numero">9,1 mi</td>
+            </tr>
+            <tr>
+                <td>PA</td>
+                <td class="numero">8,6 mi</td>
+            </tr>
+            <tr>
+                <td>SC</td>
+                <td class="numero">7,1 mi</td>
+            </tr>
+            <tr>
+                <td>MA</td>
+                <td class="numero">7 mi</td>
+            </tr>
+            <tr>
+                <td>GO</td>
+                <td class="numero">7 mi</td>
+            </tr>
+            <tr>
+                <td>AM</td>
+                <td class="numero">4,1 mi</td>
+            </tr>
+            <tr>
+                <td>ES</td>
+                <td class="numero">4 mi</td>
+            </tr>
+            <tr>
+                <td>PB</td>
+                <td class="numero">4 mi</td>
+            </tr>
+            <tr>
+                <td>RN</td>
+                <td class="numero">3,5 mi</td>
+            </tr>
+            <tr>
+                <td>MT</td>
+                <td class="numero">3,4 mi</td>
+            </tr>
+            <tr>
+                <td>AL</td>
+                <td class="numero">3,3 mi</td>
+            </tr>
+            <tr>
+                <td>PI</td>
+                <td class="numero">3,2 mi</td>
+            </tr>
+            <tr>
+                <td>DF</td>
+                <td class="numero">3 mi</td>
+            </tr>
+            <tr>
+                <td>MS</td>
+                <td class="numero">2,7 mi</td>
+            </tr>
+            <tr>
+                <td>SE</td>
+                <td class="numero">2,29 mi</td>
+            </tr>
+            <tr>
+                <td>RO</td>
+                <td class="numero">1,7 mi</td>
+            </tr>
+            <tr>
+                <td>TO</td>
+                <td class="numero">1,5 mi</td>
+            </tr>
+            <tr>
+                <td>AC</td>
+                <td class="numero">881k</td>
+            </tr>
+            <tr>
+                <td>AP</td>
+                <td class="numero">845k</td>
+            </tr>
+            <tr>
+                <td>RR</td>
+                <td class="numero">605k</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
